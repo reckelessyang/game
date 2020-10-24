@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>实训</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="over">
+        <h1 class="gameover" style="text-align: center;">游戏结束</h1>
+        <p>当前得分为<span class="overscore"></span></p>
+        <h1><a href="" class="back1">返回菜单</a></h1>
+        <!-- 上传成绩到数据库-->
+        <a href="javascript:upload();" class="onload">
+            <h4 style="margin-top: 20px;text-align: center;
+            ">上传成绩到数据库</h4>
+        </a>   
+    </div>
+    <div id="container">
+        <div id="menu">
+            <h1>箭头射击游戏</h1>
+            <ul>
+                <li><button class="btn1">开始游戏</button></li>
+                <li><button class="btn2">游戏说明</button></li>
+                <li><button class="btn3">排行榜</button></li>
+            </ul>
+        </div>
+    <p class="left">当前得分：<span id="score"></span></p>
+    <p class="right">剩余时间：<span id="timer"></span></p>
+    <p class="AIlist">恭喜你,你获得了AI自动攻击功能</p>
+    <p class="startAI">AI功能开启</p>
+    <p class="AItimes">当前获得AI功能的次数：<span id="AItimer"></span>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp点击左键使用,持续5秒</p>
+    <p class="AIover">AI功能已消失</p>
+    <!-- 1280 720 -->
+    <canvas id='canvas' width=1280 height=720></canvas>
+    </div>
+    
+
+<script src="jquery.mini.js"></script>
+<script  src="js/script.js"></script>
+<div style="text-align:center;">
+</div>
+</body>
+</html>
